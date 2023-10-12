@@ -366,4 +366,6 @@ updateDateTime();
 // Set up an interval to update date and time every second
 setInterval(updateDateTime, 1000);
 
+// chatbot js ///
+
 

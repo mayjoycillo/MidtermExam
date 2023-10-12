@@ -82,6 +82,27 @@
       <a href="about.html" class="btn-about">About Me</a>
     </div>
 
+    <button class="chatbot-toggle">
+      <span class="close-btn material-symbols-outlined">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+      <h6>M&P Creative Chat!
+          <span class="material-symbols-outlined">close</span>
+      </h6>
+
+      <ul class="chatbox">
+          <li class="chat incoming">
+              <span class="material-symbols-outlined">smart_toy</span>
+              <p>Hi there! <br> How can I help you today?</p>
+          </li>
+      </ul>
+      <div class="chat-input">
+          <textarea placeholder="Enter a message..." required></textarea>
+          <span id="send-btn" class="material-symbols-outlined">send</span>
+      </div>
+  </div>
+
     <div class="overlay" id="overlay">
       <div id="popup" class="popup">
         <div class="popup-content">
@@ -156,6 +177,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/chatbot.js" defer></script>
 
 </body>
 

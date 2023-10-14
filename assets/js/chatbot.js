@@ -7,7 +7,7 @@ const chatbotCloseBtn = document.querySelector(".close-btn");
 let userMessage;
 
 const predefinedResponses = [
-    "Good evening",
+    "Good day! What can I do for your today?",
     "That sounds interesting!",
     "I'm not sure. Can you please provide more details?",
     "Tell me more about it.",

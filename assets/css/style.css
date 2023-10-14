@@ -138,7 +138,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 60px;
 }
 
 @media (max-width: 992px) {
@@ -189,6 +189,7 @@ h6 {
 #search-icon {
   margin-left: 10px;
   cursor: pointer;
+  font-size: 24px;
 }
 
 #suggestion-list {
@@ -205,7 +206,7 @@ h6 {
 }
 
 #suggestion-list li {
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
 }
 
@@ -213,6 +214,15 @@ h6 {
   background-color: #f2f2f2;
 }
 
+@media screen and (max-width: 768px) {
+  #search-input {
+      display: none; /* Hide the input field on smaller screens */
+  }
+  
+  #search-icon {
+      display: inline; /* Display the icon on smaller screens */
+  }
+}
 
 
 /*--------------------------------------------------------------

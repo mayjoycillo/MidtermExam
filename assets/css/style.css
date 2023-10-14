@@ -2026,6 +2026,7 @@ section {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
   text-align: center;
+  margin-top: 30px;
 }
 
 .popup {
@@ -2034,7 +2035,7 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #34b7a7;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -2070,8 +2071,13 @@ section {
   grid-gap: 20px;
   max-width: 500px; /* Adjust the maximum width as needed */
 }
-#section1 {
-  background: rgba(0, 131, 116, 0.8);
+
+#section2 {
+  background: #fff;
+}
+
+#section3 {
+  background: #fff;
 }
 
 #section2 img {
@@ -2126,6 +2132,25 @@ section {
   margin-right: 10px; /* Adjust the margin to control the spacing between the icon and text */
   font-size: 24px; /* Adjust the font size of the icon */
   vertical-align: middle; /* Vertically align the icon with the text */
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    margin: 10% 5%;
+  }
+
+  .container-popup {
+    text-align: center;
+  }
+
+  .popup-section {
+    text-align: center;
+  }
 }
 
 /* chatbot */

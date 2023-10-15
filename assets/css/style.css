@@ -813,6 +813,10 @@ section {
   background-color: #34b7a7;
 }
 
+.testimonials-slider {
+  display: relative;
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -2134,10 +2138,6 @@ section {
   vertical-align: middle; /* Vertically align the icon with the text */
 }
 
-.responsive-image {
-  max-width: 100%;
-  height: auto;
-}
 
 @media screen and (max-width: 768px) {
   .popup {
@@ -2148,7 +2148,7 @@ section {
     text-align: center;
   }
 
-  .popup-section {
+  .container-popup {
     text-align: center;
   }
 }

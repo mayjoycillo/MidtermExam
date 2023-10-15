@@ -6,14 +6,15 @@ const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
 
-const predefinedResponses = [
-    "Good day! What can I do for your today?",
-    "That sounds interesting!",
-    "I'm not sure. Can you please provide more details?",
-    "Tell me more about it.",
-    "How can I assist you today?",
-    "I'm here to help. What's on your mind?"
-];
+const predefinedResponses = {
+    "where are the portfolio details located": "The portfolio details are located on the Portfolio page. Click the link icon to access them.",
+    "another user query": "The response to the query",
+    "services": "Website Development, Website Design, Graphic Design",
+    "graphic design": "We provide logo making.",
+    "website development": "We can make a PHP Website",
+    "website design": "We can make you a UI using Figma, with prototype",
+    // Add more predefined responses as needed
+};
 
 const inputInitHeight = chatInput.scrollHeight;
 
@@ -29,11 +30,14 @@ const createChatLi = (message, className) => {
 const generateResponse = (incomingChatLi) => {
     const messageElement = incomingChatLi.querySelector("p");
 
-    // Randomly select a predefined response
-    const randomIndex = Math.floor(Math.random() * predefinedResponses.length);
-    const randomResponse = predefinedResponses[randomIndex];
-
-    messageElement.textContent = randomResponse;
+    const userQuery = userMessage.toLowerCase();
+    // Check for specific user query and provide predefined response
+    if (userQuery in predefinedResponses) {
+        messageElement.textContent = predefinedResponses[userQuery];
+    } else {
+        // If the query is not predefined, provide a default response
+        messageElement.textContent = "I'm here to help. What's on your mind?";
+    }
 
     chatbox.scrollTo(0, chatbox.scrollHeight);
 }

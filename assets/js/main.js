@@ -250,7 +250,7 @@
 
 
 // Array of keywords
-const keywords = ['HTML', 'CSS', 'JavaScript', 'SQL', 'PHP', 'C++', 'Python', 'Home', 'Portfolio'];
+const keywords = ['Home', 'About', 'Services', 'Team', 'Blog', 'Portfolio-Details', 'Python', 'Home', 'Portfolio'];
 
 // Function to redirect to a page
 function redirect(keyword) {
@@ -367,5 +367,24 @@ updateDateTime();
 setInterval(updateDateTime, 1000);
 
 // chatbot js ///
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get references to the chatbox toggle button and the slider content
+  const chatbotToggle = document.querySelector(".chatbot-toggle");
+  const sliderContent = document.querySelector(".testimonials-slider");
+
+  // Function to show or hide the slider content
+  function toggleSliderVisibility() {
+    if (sliderContent.style.display === "none") {
+      sliderContent.style.display = "block";
+    } else {
+      sliderContent.style.display = "none";
+    }
+  }
+
+  // Attach a click event listener to the chatbot toggle button
+  chatbotToggle.addEventListener("click", toggleSliderVisibility);
+});
+
 
 

@@ -2291,7 +2291,7 @@ section {
   width: 100%;
   display: flex;
   gap: 5px;
-  background: var(--second-bg-color);
+  background: #fff;
   padding: 5px 20px;
   border-top: 1px solid #ccc;
 }

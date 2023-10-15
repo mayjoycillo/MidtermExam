@@ -250,7 +250,7 @@
 
 
 // Array of keywords
-const keywords = ['Gallery', 'About', 'Services', 'Team', 'Blog', 'Portfolio-Details', 'Python', 'Index', 'Portfolio'];
+const keywords = ['Gallery', 'About', 'Services', 'Team', 'Blog', 'Index', 'Portfolio'];
 
 // Function to redirect to a page
 function redirect(keyword) {

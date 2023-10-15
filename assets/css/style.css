@@ -214,16 +214,21 @@ h6 {
   background-color: #f2f2f2;
 }
 
-@media screen and (max-width: 768px) {
-  #search-input {
-      display: none; /* Hide the input field on smaller screens */
+@media (max-width: 768px) {
+  .search-container {
+      flex-direction: column;
+      align-items: flex-start;
   }
-  
+
+  #search-input {
+      display: none; /* Hide the search input on smaller screens */
+  }
+
+  /* Display the search icon on smaller screens */
   #search-icon {
-      display: inline; /* Display the icon on smaller screens */
+      display: inline-block;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -795,7 +800,6 @@ section {
     width: 80%;
   }
 }
-
 .testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;

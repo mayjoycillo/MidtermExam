@@ -250,7 +250,7 @@
 
 
 // Array of keywords
-const keywords = ['Gallery', 'About', 'Services', 'Team', 'Blog', 'Index', 'Portfolio'];
+const keywords = ['Gallery', 'About', 'Services', 'Team', 'Blog', 'Index', 'Portfolio', 'Resume', 'Contact', 'Testimonials'];
 
 // Function to redirect to a page
 function redirect(keyword) {
@@ -386,5 +386,10 @@ document.addEventListener("DOMContentLoaded", function () {
   chatbotToggle.addEventListener("click", toggleSliderVisibility);
 });
 
+
+//blog details//
+document.getElementById("back-button").addEventListener("click", function () {
+  window.history.back();
+});
 
 

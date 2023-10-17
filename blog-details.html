@@ -75,6 +75,10 @@
 
     <section id="blog" class="blog">
         <div class="container" data-aos="fade-up">
+
+          <button id="back-button" class="back-button" onclick="goBack()">
+            <i class="bi bi-arrow-left back-icon"></i>
+          </button>
   
           <div class="section-title">
             <h2>Blog Details</h2>
@@ -269,35 +273,6 @@
 
               </div><!-- End comment #4 -->
 
-              <div class="reply-form">
-
-                <h4>Leave a Reply</h4>
-                <p>Your email address will not be published. Required fields are marked * </p>
-                <form action="">
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input name="name" type="text" class="form-control" placeholder="Your Name*">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <input name="email" type="text" class="form-control" placeholder="Your Email*">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col form-group">
-                      <input name="website" type="text" class="form-control" placeholder="Your Website">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col form-group">
-                      <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Post Comment</button>
-
-                </form>
-
-              </div>
-
             </div><!-- End blog comments -->
 
           </div>
@@ -305,14 +280,6 @@
           <div class="col-lg-4">
 
             <div class="sidebar">
-
-              <div class="sidebar-item search-form">
-                <h3 class="sidebar-title">Search</h3>
-                <form action="" class="mt-3">
-                  <input type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-              </div><!-- End sidebar search formn-->
 
               <div class="sidebar-item categories">
                 <h3 class="sidebar-title">Categories</h3>
@@ -432,6 +399,14 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+
+  <script>
+    document.getElementById("back-button").addEventListener("click", function () {
+      window.history.back();
+    });
+  </script>
+
+  
   <script src="assets/js/main.js"></script>
 
 </body>

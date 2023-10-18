@@ -681,6 +681,7 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -880,6 +881,10 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #34b7a7;
+}
+
+.resume p {
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -1678,6 +1683,10 @@ section {
   position: fixed;
   font-size: 20px;
   background: #fff;
+}
+
+.blog-details p {
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
